@@ -3,7 +3,7 @@ html  {
     box-sizing: border-box;
     height: auto;
     width: auto;
-  
+    font-size: 10px;
 
 
 }
@@ -21,16 +21,16 @@ body {
 
 .bar-container {
 
-height: 30px;
-width: auto;
-background-color: black;
-color: white;
-padding: 5px;
-font-size: 75%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-text-align: center;
+    height: 30px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 
 }
 
@@ -57,34 +57,42 @@ nav {
 
 .nav-container {
 
-display: flex;
-justify-content: space-around;
-align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
 
 }
 
-.nav-item1 {
+.nav-container ul {
 
-position: absolute;
-display: inline-block;
-left: 100px;
-
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 10rem;
+    
+    
+    
 }
 
-.nav-item2 {
+.nav-container li {
 
-position: absolute;
-left: 181px;
-
+    float: left;
+    font-size: 1.8rem;
+    font-weight: 700, bold;
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+    
 }
+
 
 .nav-container a {
 
-font-size: 112.5%;
-text-decoration: none;
-color: black;
-font-weight: bold;
+    font-size: 112.5%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 
 }
 
@@ -95,20 +103,20 @@ font-weight: bold;
 
 
 
-.menu-container {
-margin-top: 0px;
-width: 100%;
-height: 800px;
-background-image: url(https://images.unsplash.com/photo-1624160719183-b3b9010a77c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+.image-container {
+    margin-top: 0px;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
 
 }
 
 main h3 {
 
-margin-top: 0px;
+    margin-top: 0px;
 }
 
 .text-box {
@@ -118,8 +126,8 @@ margin-top: 0px;
     height: 45.40%;
     max-height: 311px;
     background-color: white;
-    position: absolute;
     left: 2.5%;
+    position: absolute;
     bottom: 0px;
     background: rgba(255, 255, 255, 0.56);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -133,7 +141,7 @@ margin-top: 0px;
     position: absolute;
     left: 10.15%;
     top: 20.57%;
-    font-size: 250%;
+    font-size: 4rem;
 }
 
 .text-box h3 {
@@ -141,41 +149,41 @@ margin-top: 0px;
     position: absolute;
     left: 10.15%;
     top: 20.57%;
-    font-size: 75%;
+    font-size: 1.2rem;
     text-transform: uppercase;
     
 }
 
 .text-box p {
 
-position: absolute;
-left: 10.15%;
-width: 90%;
-max-width: 419px;
-top: 56.5916398713%;
-font-size: 100%;
+    position: absolute;
+    left: 10.15%;
+    width: 90%;
+    max-width: 419px;
+    top: 56.5916398713%;
+    font-size: 1.6rem;
 
 
 }
 
 .text-box a {
 
-position: absolute;
-left: 10.15%; 
-bottom: 7.51%;
-text-decoration: none;
-color: black;
-font-size: 14px;
-font-weight: 700;
+    position: absolute;
+    left: 10.15%; 
+    bottom: 7.51%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
 
 
 }
 
 .divide {
 
-width: 100%;
-height: 64px;
-background-color: #f5f5f5;
+    width: 100%;
+    height: 64px;
+    background-color: #f5f5f5;
 }
 
 
@@ -188,78 +196,73 @@ background-color: #f5f5f5;
 
 .second-page {
 
-width: 100%;
-height: 800px;
-display: flex;
+    width: 100%;
+    height: 800px;
+    display: flex;
 
 
 }
 
 .image-box {
 
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 
 .text-area {
 
-width: 100%;
-height: 100%;
-position: relative;
-display: flex;
-flex-direction: column;
-
-
-}
-
-.title2 {
-
-position: absolute;
-top:33.125%;
-left:10.125%;
+    width: 100%;
+    height: 100%;
+    
 
 
 }
 
 .title1 {
 
-position: absolute;
-top: 30.125%;
-left:10.125%;    
+margin-top: 24.1rem;
+margin-left: 8.1rem;
+font-size: 1.2rem;
 }
 
 
+.title2 {
+
+margin-left: 8.1rem;
+font-size: 3.2rem;
+
+}
 
 
+.second-page .text-area p {
 
-.text-area p {
-
-position: absolute;
-top:41.875%;
-left:10.125%;
-width: 79.75%;
-font-weight: 400;
-font-size: 100%;
+    position: relative;
+    margin-left: 8.1rem;
+    margin-top: 0px;
+    font-size: 1.6rem;
+    width: 79.75%;
+    margin-bottom: 0px;
 
 
 }
 
 .discover {
 
-position: absolute;
-top:63.875%;
-left:10.125%;
-width: 169.29px;
-height: 48px;
-background-color: rgb(0, 0, 0);
-display: flex; 
-align-items: center;
-justify-content: center;
-gap: 11px;
-color: #f5f5f5;
-text-decoration: none;
-text-transform: uppercase;
+    position: relative;
+    margin-left: 8.1rem;
+    margin-top: 3.2rem;
+    width: 16.929rem;
+    height: 4.8rem;
+    background-color: rgb(0, 0, 0);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
 }
 
 
@@ -280,73 +283,66 @@ text-transform: uppercase;
     
     }
 
-    .image-box 
-    
-    {
-        width: 100%;
-        height: 100%;
-        background-image: url(https://images.unsplash.com/photo-1610523751953-f0921cb46366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=673&q=80);
-        background-repeat: no-repeat;
-        background-size: cover;
+.image-box {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1610523751953-f0921cb46366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=673&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
     
-    .image-item2 {
+.image-item2 {
     
     width: 100%;
     height: 100%;
     
     }
     
-    .text-area {
+    .text-area--replace {
 
         width: 100%;
         height: 100%;
+        
+    
+    
+    }
+    
+    .title1--replace {
+    
+    margin-top: 24.1rem;
+    margin-left: 8.1rem;
+    font-size: 1.2rem;
+    }
+    
+    
+    .title2--replace {
+    
+    margin-left: 8.1rem;
+    font-size: 3.2rem;
+    
+    }
+    
+    
+    .third-page .text-area--replace p {
+    
         position: relative;
-        display: flex;
-        flex-direction: column;
-        
-        
-        }
-        
-        .title2 {
-        
-        position: absolute;
-        top:33.125%;
-        left:10.125%;
-        
-        
-        }
-        
-        .title1 {
-        
-        position: absolute;
-        top: 30.125%;
-        left:10.125%;    
-        }
-        
-        
-        
-        
-        
-        .text-area p {
-        
-        position: absolute;
-        top:41.875%;
-        left:10.125%;
+        margin-left: 8.1rem;
+        margin-top: 0px;
+        font-size: 1.6rem;
         width: 79.75%;
-        font-weight: 400;
-        font-size: 100%;
-        
-        
-        }
-        
-        .discover {
-        
-        position: absolute;
-        top:63.875%;
-        left:10.125%;
-        width: 169.29px;
-        height: 48px;
+        margin-bottom: 0px;
+    
+    
+    }
+    
+    .discover--replace {
+    
+        position: relative;
+        margin-left: 8.1rem;
+        margin-top: 3.2rem;
+        width: 16.929rem;
+        height: 4.8rem;
         background-color: rgb(0, 0, 0);
         display: flex; 
         align-items: center;
@@ -355,9 +351,10 @@ text-transform: uppercase;
         color: #f5f5f5;
         text-decoration: none;
         text-transform: uppercase;
-        }
+        font-size: 1.4rem;
+    }
 
-    .box-icon {
+.box-icon {
 
     width: 100%;    
     height: 160px ;
@@ -372,7 +369,7 @@ text-transform: uppercase;
 
 
 
-    .box1 {
+.box1 {
     height: 800px;
     width: 50%;   
     color: #f5f5f5; 
@@ -386,149 +383,150 @@ text-transform: uppercase;
 
 /***************************** Mobile Device ********************/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     
-    html  {
+html  {
 
-        box-sizing: border-box;
-      
-      
+    box-sizing: border-box;
+    
+    
+
+
+}
+
+body {
+    
+    font-family: sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    
+}
+
+.bar-container {
+
+
+    height: 32px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    font-size: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+nav {
+
+    background-color: rgb(255, 255, 255);
+    height: 65px;
+    width: 100%;
+    margin: 0px;
+
+}
+
+
+.nav-item1 {
+
+    position: absolute;
+    display: inline-block;
+    left: 28px;
     
     
     }
-   
-    body {
-      
-        font-family: sans-serif;
-        margin: 0px;
-        height: 100%;
-        width: 100%;
-        max-width: 768px;
-        box-sizing: border-box;
+    
+.nav-item2 {
+    
+    position: absolute;
+    left: 64px;
+    
+    
+    }
+    
+.nav-container a {
+    
+    font-size: 112.5%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+    
+.nav-container :hover {
+    
+        text-decoration: underline;
+}
+
+
+
+
+.menu-container {
         
-    }
+        width: 100%;
+        height: 52.7rem;
+        background-image: url(https://images.unsplash.com/photo-1624160719183-b3b9010a77c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+    
+        
+}
 
-    .bar-container {
- 
+.text-box {
 
-        height: 32px;
-        width: auto;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        padding: 5px;
-        font-size: 75%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-
-    }
-
-    nav {
-
+        width: 100%;
+        max-width: 1023px;
+        height: 29.79%;
+        
         background-color: rgb(255, 255, 255);
-        height: 65px;
-        width: 100%;
-        margin: 0px;
+        
+        
+        bottom: 0px;
+        left: 0px;
+        
+        
     
-    }
+}
 
-
-    .nav-item1 {
-
-        position: absolute;
-        display: inline-block;
-        left: 28px;
-        
-        
-        }
-        
-    .nav-item2 {
-        
-        position: absolute;
-        left: 64px;
-        
-        
-        }
-        
-    .nav-container a {
-        
-        font-size: 112.5%;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        
-    }
-        
-    .nav-container :hover {
-        
-            text-decoration: underline;
-    }
-
-    
-
-
-    .menu-container {
-            
-            width: 100%;
-            height: 537px;
-            background-image: url(https://images.unsplash.com/photo-1624160719183-b3b9010a77c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-            background-repeat: no-repeat;
-            background-size: cover;
-        
-           
-    }
-
-    .text-box {
-
-            width: 100%;
-            max-width: 767px;
-            height: 29.79%;
-            
-            background-color: rgb(255, 255, 255);
-            
-            
-            bottom: 0px;
-            left: 0px;
-           
-           
-        
-    }
-
-    .text-box h1 {
-            
-            position: relative;
-            font-size: 250%;
-            text-align: center;
-            top: 0px;
-    }
-        
-    .text-box h3 {
-        
-            
-            position: relative;
-            font-size: 75%;
-            text-transform: uppercase;
-            text-align: center;           
-    }
-        
-        
-        
-    .text-box a {
+.text-box h1 {
         
         position: relative;
-        
-        text-decoration: none;
-        color: black;
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 250%;
         text-align: center;
-    }
+        top: 0px;
+}
+    
+.text-box h3 {
+    
         
-    .text-box p {
+        position: relative;
+        font-size: 75%;
+        text-transform: uppercase;
+        text-align: center;           
+}
+    
+    
+    
+.text-box a {
+    
+    position: relative;
+    
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+    
+.text-box p {
 
-            display: none;
-    }
+        display: none;
+}
 
 
-    } 
+} 
