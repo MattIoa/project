@@ -390,7 +390,7 @@ font-size: 3.2rem;
 
 
 .footer-box {
-    height: 800px;
+    height: 45.8rem;
     width: 100%;   
     display: grid;
     grid-template-columns: 50% 25% 25%;
@@ -414,6 +414,26 @@ width: 44rem;
 font-size: 2.4rem;
 margin-left:18rem;
 margin-top: 8.2rem;
+margin-bottom: 0px;
+}
+
+.box .send {
+
+position: absolute;
+text-transform: uppercase;
+left: 0px;
+font-size: 1.6rem;
+width: 12rem;
+height: 4.8rem;
+background-color: #9d9d9d;
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 11px;
+margin-left: 51.2rem;
+margin-top: 4.7rem;
+
 }
 
 .box input {
@@ -425,10 +445,27 @@ border-left: 0px;
 border-right: 0px;
 border-bottom: 1px solid;
 position: absolute;
+margin-top: 7.7rem;
 
 
 }
 
+.box form {
+
+position: absolute;  
+margin-left: 18rem;  
+}
+
+.box p {
+
+font-size: 1rem;
+width: 45.2rem;
+height: 4.8rem;
+color: #9d9d9d;
+text-justify: none;
+margin-left: 18rem;
+margin-top: 13.6rem;
+}
 
 /***************************** Mobile Device ********************/
 
