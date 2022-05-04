@@ -570,6 +570,20 @@ font-weight: 700;
 
 }
 
+.help li a {
+
+text-decoration: none;
+color: black;
+
+}
+
+.help li a:hover {
+
+    text-decoration: underline;
+    color: black;
+    
+    }
+
 .icon-list {
 
     display: flex;
@@ -619,6 +633,20 @@ display: none;
     margin-right: 2rem;
 
 }
+
+.help--replace li a {
+
+    text-decoration: none;
+    color: black;
+    
+    }
+    
+.help--replace li a:hover {
+    
+    text-decoration: underline;
+        color: black;
+        
+        }
 
 .icon-list--replace {
 
