@@ -1,0 +1,22 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "sass":"sass --watch src/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattIoa/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattIoa/project/issues"
+  },
+  "homepage": "https://github.com/MattIoa/project#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

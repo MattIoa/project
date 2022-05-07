@@ -1,0 +1,14 @@
+.title {
+
+    width: 100%;
+    height: 162px;
+    background-color: rgb(82, 82, 82);
+    display: flex;
+    @include flex-center;
+    
+    h4{ 
+        font-size: $big-font;
+        font-weight: $small-weight;
+    }
+
+}

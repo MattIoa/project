@@ -1,0 +1,132 @@
+html  {
+
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    font-size: 10px;
+
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+
+.bar-container {
+
+    height: 30px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: $small-font;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.bar-container button{
+
+margin: 0;
+padding: 0;
+background-color:transparent;
+border: 0px;
+
+
+}
+.bar-container svg {
+
+margin-right: 1.86rem;
+
+}
+
+.bar-container a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.material-icons {
+
+    rotate: 45;
+}
+
+nav {
+
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+
+}
+
+
+.list-container {
+
+        display: flex;
+        align-items: center;
+
+
+
+    ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10rem;
+    
+    
+    } 
+
+
+    li {
+
+    float: left;
+    font-size: $medium-font;
+    font-weight: $medium-weight;
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+    
+}
+
+
+ a {
+
+    font-size: 112.5%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+ svg {
+
+display: none;
+
+} 
+
+ &:hover {
+
+    text-decoration: underline;
+}
+
+}
+
+
