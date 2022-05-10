@@ -2,7 +2,7 @@
 
     width: 100%;
     height: 70px;
-    background-color: #333333;
+    background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,38 +31,197 @@ margin-left: 4.2rem;
 
 }
 
+@media screen and (max-width: 797px){
+
+
+    .title {
+
+        font-size: $mobile-title;
+        justify-content: start;
+        margin-left: 2.4rem;
+        width: auto;
+        height: 8.6rem;
+    }
+
+    .filters-bar {
+
+        svg {
+            display: none;
+        }
+    }
+
+}
+
 .grid-product {
 
 display: grid;
-grid-template-columns:  1fr 1fr 1fr 1fr;
+grid-template-columns: auto auto auto auto;
 grid-template-rows: 1fr 1fr 1fr 1fr;
-gap: 2px;
+grid-gap: 2px;
 width: 100%;
+
+}
+
+@media screen and (max-width: 797px) {
+
+    .grid-product {
+
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
 }
 
 
 .product-item {
 
-    @include product-item;
+    width: auto;
+    height: 57.6rem;
+    background-color: #f5f5f5;
+    position: relative;
     
+    h3{
+
+        font-size:$product-font;
+        font-weight:$big-weight ;
+        margin: 0px 0px 0px 0px;
+        padding-left: $left-padding-items;
+        padding-top: 3.5rem;
+        }
+    
+        h4 {
+    
+        font-weight: $small-weight;
+        padding-left: $left-padding-items;
+        padding-top: 0.4rem;
+        margin: 0px;
+    
+        }
+    
+        p {
+    
+            display: inline-block;
+            padding-left: $left-padding-items;
+            margin-top: 4.6rem;
+            font-weight: $extra-weight;
+            font-size: $product-font;
+        }
+    
+        .old-price {
+    
+            font-size: $small-font;
+            text-decoration: line-through;
+            font-weight: $small-weight;
+    
+        }
+    
+        .add-to-cart {
+            display: none;
+            
+        }
+
+        
+    }
+
+
+@media screen and (max-width: 797px) {
+
+    .product-item {
+        width: auto;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+
+
+        .button-cart {
+
+            width: 17.1rem;
+            height: 4rem;
+            margin: auto;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.8rem;
+            @include no-border-button;
+            background-color: #ffffff;
+            
+
+
+
+            p {
+                margin: 0px;
+                padding: 0px;
+                padding-left: 0.8rem;
+                letter-spacing: -0.5px;
+            }
+
+            .old-price {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            
+            .add-to-cart {
+                    display: inline;
+                    margin-left: 3rem;
+            }
+        }
+    }
+
+
 }
+
 
     .product-image {
 
-        @include product-image;
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
+        width: auto;
+        height: 39.8rem;
+        background-image: url(https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        
 
         svg {
-            padding: 18px 18px 0px 0px;
+        position: absolute;
+        top: 1.8rem;
+        right: 1.8rem;
+        width: 5.025125628140704%;
+        height: 5.025125628140704%;
+        max-width: 2rem;
+        max-height: 2rem;
+        min-width: 13.33px;
+        min-height:13.41px;
         }
 
-        p {
-            margin: 0px;
-            padding-top: 21px;
-            padding-left: $left-padding-items;
-            text-transform: uppercase;
+        h5 {
+            position: absolute;
+            top: 2.1rem;
+            left: 1.6rem;
             font-weight: $extra-weight;
+            text-transform: uppercase;
+            margin: 0px;
+        }
+
+        .quantity { position: absolute;
+            bottom: 2.3rem;
+            left: 1.8rem;
+            margin: 0px;
+            font-size: $extra-small-font;
+            padding: 0px;
+    
         }
     }
+    
+    @media screen and (max-width: 797px) {
+
+        .product-image { width: auto;
+            height: 18.7rem;
+            gap: 1px;
+        }
+    }
+
+
+
