@@ -1,0 +1,76 @@
+
+.accordion-box {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.accordion-body {
+    display: block;
+    background-color: #f5f5f5;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 90.3rem;
+    height: 4.8rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 8.1rem;
+    font-weight: $big-weight;
+    font-size: $default-font;
+    border-bottom: 1px solid #e5e5e5;
+
+    
+}
+
+  
+
+  .active, .accordion-body:hover {
+    background-color: #ccc;
+  }
+  
+
+  .panel {
+    
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: $default-font;
+    font-weight: $small-weight;
+    margin-left: 8.1rem;
+    width: 90.3rem;
+
+    p {
+        margin: 2.4rem 2.4rem 3.2rem 2.4rem;
+    }
+  }
+
+  .accordion-body:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  @media screen and (max-width: 797px) {
+
+
+
+    .accordion-body {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .panel {
+        width: 100%;
+        margin-left: 0px;
+        line-height: 24px;
+    }
+
+}
+  

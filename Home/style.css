@@ -14,7 +14,7 @@ body {
     height: 100%;
     width: 100%;
     max-width: 1920px;
-    max-height: 1080px;
+
 }
 
 
@@ -415,7 +415,7 @@ margin-top: 0px;
     justify-content: space-around;
     flex-direction: row;
     gap: 8.2rem;
-   
+
     }
 
 .icon {
@@ -714,6 +714,15 @@ justify-content: center;
 gap: 0.8rem;
 }
 
+
+.modal {
+    display: none;
+}
+
+.modal.is-open {
+
+    display: block;
+}
 
 
 
