@@ -183,6 +183,9 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.filters-bar .btn--active {
+  fill: black;
+}
 .filters-bar button {
   border: 0px;
   background-color: transparent;
@@ -210,18 +213,30 @@ a {
     width: auto;
     height: 8.6rem;
   }
-
-  .filters-bar svg {
-    display: none;
-  }
 }
 .grid-product {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2px;
   width: 100%;
   border-bottom: 64px solid #f5f5f5;
+}
+.grid-product .product-item-col-6 {
+  display: none;
+}
+
+.grid-product.grid-product-6-col {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-product.grid-product-6-col button {
+  display: none;
+}
+.grid-product.grid-product-6-col .product-item-col-6 {
+  display: block;
+  background-color: #f5f5f5;
+}
+.grid-product.grid-product-6-col span, .grid-product.grid-product-6-col h5, .grid-product.grid-product-6-col h4, .grid-product.grid-product-6-col h3, .grid-product.grid-product-6-col h2, .grid-product.grid-product-6-col h1, .grid-product.grid-product-6-col p {
+  display: none;
 }
 
 @media screen and (max-width: 797px) {

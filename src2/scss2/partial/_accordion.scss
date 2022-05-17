@@ -47,7 +47,7 @@
   }
 
   .accordion-body:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.5 9.08252H20.5V11.0825H11.5V20.0825H9.5V11.0825H0.5V9.08252H9.5V0.0825195H11.5V9.08252Z' fill='black'/%3E%3C/svg%3E ");
     font-size: 13px;
     color: #777;
     float: right;
@@ -55,7 +55,7 @@
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: url("data:image/svg+xml,%3Csvg width='21' height='3' viewBox='0 0 21 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.5 0.0825195V2.08252H0.5V0.0825195H20.5Z' fill='black'/%3E%3C/svg%3E ");
   }
 
   @media screen and (max-width: 797px) {
