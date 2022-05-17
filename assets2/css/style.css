@@ -184,66 +184,15 @@ nav {
   text-decoration: underline;
 }
 
-.product-grid {
-  display: inline-grid;
-  grid-template-columns: 53.1rem 53.1rem;
-  grid-template-rows: 53.1rem 53.1rem;
-  gap: 2px;
-  width: auto;
-  float: left;
-}
-.product-grid .element-grid {
-  width: 53.1rem;
-  height: 53.1rem;
-  overflow: hidden;
-}
-
-.product-price {
-  display: inline-block;
-  height: 106.4rem;
-  width: auto;
-}
-.product-price .product {
-  padding-left: 4.2rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0.75rem 0;
-  display: block;
-}
-.product-price .description {
-  padding-left: 4.2rem;
-  display: block;
-  font-size: 1.6rem;
-}
-.product-price .price {
-  padding-left: 4.2rem;
-  padding-top: 3rem;
-  display: block;
-}
-
-.add-to-cart {
-  width: 38.5rem;
-  height: 6.5rem;
-  background-color: black;
-  display: inline-flex;
-  color: white;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 4.2rem;
-  margin-top: 5rem;
-  border: 0px;
-}
-
-.wishlist {
-  width: 6.4rem;
-  height: 6.4rem;
-  background-color: black;
-  display: inline-flex;
-}
-
 .swiper {
-  width: 600px;
-  height: 300px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  min-height: 37.5rem;
+}
+
+swiper-wrapper img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .product-grid {
@@ -282,18 +231,49 @@ nav {
   padding-top: 3rem;
   display: block;
 }
+.product-price .new-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.product-price .discount {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+.product-price .old-price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding-left: 4.2rem;
+  padding-top: 5rem;
+}
+.buttons button {
+  padding: 0px;
+}
+.buttons .cart-icon {
+  padding-right: 2.3rem;
+}
 
 .add-to-cart {
   width: 38.5rem;
-  height: 6.5rem;
+  height: 6.4rem;
   background-color: black;
   display: inline-flex;
   color: white;
   align-items: center;
   justify-content: space-between;
-  margin-left: 4.2rem;
-  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
   border: 0px;
+}
+.add-to-cart .cart-font {
+  padding-left: 1.6rem;
 }
 
 .wishlist {
@@ -301,26 +281,100 @@ nav {
   height: 6.4rem;
   background-color: black;
   display: inline-flex;
+  border: 0px;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 797px) {
-  .product-grid {
+.product-place-mobile {
+  display: none;
+}
+
+.product-price-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .product-place {
     display: none;
   }
 
-  .add-to-cart {
+  .menu-bar {
+    display: none;
+  }
+
+  .product-place-mobile {
+    display: block;
+  }
+  .product-place-mobile img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .add-to-cart-mobile {
     width: 32.8rem;
     height: 6.5rem;
     background-color: black;
     display: inline-flex;
     color: white;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     border: 0px;
+    position: relative;
   }
 
   .wishlist {
     display: none;
+  }
+
+  .product-price-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .product-price-mobile .add-to-cart-mobile {
+    margin: 0 auto;
+  }
+  .product-price-mobile .product-mobile {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 2.4rem;
+    margin-bottom: 0px;
+  }
+  .product-price-mobile .description-mobile {
+    font-size: 1.4rem;
+    font-weight: 1.2rem;
+    padding-left: 2.4rem;
+    display: block;
+  }
+  .product-price-mobile .price-mobile {
+    padding-top: 2.4rem;
+    display: block;
+    padding-right: 0.3rem;
+  }
+  .product-price-mobile .price-mobile .new-price-mobile {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 2.4rem;
+  }
+  .product-price-mobile .price-mobile .discount-mobile {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-right: 0.3rem;
+  }
+  .product-price-mobile .price-mobile .old-price-mobile {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .centered-button {
+    display: block;
+    margin-left: 2.4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 .accordion-box {

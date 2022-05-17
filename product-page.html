@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets2/css/style.css">
-    <script src="/accordion.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script src="js/swiper.js" type="application/javascript"></script> -->
+
     <title>Document</title>
 </head>
+
 <body>
     <div class="bar-container">
 
@@ -30,7 +32,7 @@
     <span class="list-container">
         <ul>
             <li><span class="nav-item1">
-                <a href="Home/index.html">Home</span> 
+                <a href="/Home/index.html">Home</span> 
                     <span class="nav-icon1"> <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.90754L8 2.65754L2 7.90754V17H14V7.90754ZM8 0L16 7V17V19H14H2H0V17V7L8 0Z" fill="black"/>
                     </svg></span>
@@ -59,51 +61,71 @@
 
 
 
-<div class="product-place">
+<div class="product-place-mobile">
 
     <div class="swiper">
-        <!-- Additional required wrapper -->
+        
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
 
-<div class="product-grid">
-    <div class="element-grid"><img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt=""> </div>
-    <div class="element-grid"><img src="https://images.unsplash.com/photo-1554118879-e459bb1fe1ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80" alt="">  </div>
-    <div class="element-grid"><img src="https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""> </div>
-    <div class="element-grid"> <img src="https://images.unsplash.com/photo-1596484065117-dbb2ba7e852f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=819&q=80" alt=""></div>
-</div>
-<div class="product-price">
-    <p class="product">Product Name</p>
-    <span class="description">Description</span>
-    <span class="price"><span class="new-price">€ 120,00 </span><span class="discount">-50% </span> <span class="old-price">€ 240,00</span></span>
-    <div>
-    <button type="button" class="add-to-cart">
-        <span>Add to cart</span>
-        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03319 4C5.32717 1.81519 7.51054 0 9.99959 0C12.4886 0 14.672 1.81519 14.966 4H17.8466C18.9511 4 19.8466 4.89543 19.8466 6C19.8466 6.09464 19.8399 6.18916 19.8265 6.28284L18.1122 18.2828C17.9714 19.2681 17.1276 20 16.1323 20H3.86688C2.87158 20 2.02774 19.2681 1.88699 18.2828L0.172699 6.28284C0.0164898 5.18937 0.776288 4.17631 1.86976 4.0201C1.96344 4.00672 2.05796 4 2.1526 4H5.03319ZM7.07227 4H12.928C12.624 2.93808 11.3982 2 10.0001 2C8.60211 2 7.37626 2.93808 7.07227 4ZM2.15234 6H4.99933V8H6.99933V6H12.9993V8H14.9993V6H17.8463L16.132 18H3.86663L2.15234 6Z" fill="white"/>
+          <span class="wishlist-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1393 1.60009e-05C12.8232 0 11.9749 0.171383 11.0024 0.691711C10.6424 0.884353 10.3046 1.11635 9.99088 1.38701C9.68927 1.13153 9.36498 0.910178 9.01983 0.723571C8.02847 0.187592 7.13662 0 5.86777 0C2.46949 0 0 3.07786 0 7.07526C0 10.0941 1.53985 13.0102 4.40804 15.8301C5.91354 17.3102 7.83575 18.7749 9.21237 19.5542L10 20L10.7876 19.5542C12.1643 18.7749 14.0865 17.3102 15.592 15.8301C18.4602 13.0102 20 10.0941 20 7.07526C20 3.12017 17.5072 0.0152621 14.1393 1.60009e-05ZM18.182 7.0751C18.182 9.4402 16.8967 11.8743 14.3763 14.3522C13.0022 15.7031 11.2356 17.0532 10.0002 17.7615C8.76476 17.0532 6.99819 15.7031 5.62406 14.3522C3.10365 11.8743 1.81836 9.4402 1.81836 7.0751C1.81836 4.12156 3.53076 1.9873 5.86795 1.9873C6.8768 1.9873 7.49847 2.11807 8.21393 2.50488C8.63655 2.73337 9.01006 3.03507 9.33339 3.41209L10.0023 4.1921L10.6651 3.40591C10.9957 3.01378 11.3747 2.70521 11.8019 2.47664C12.4964 2.10506 13.0793 1.9873 14.1357 1.98731C16.444 1.99777 18.182 4.16255 18.182 7.0751Z" fill="black"/>
             </svg>
             </span>
-    </button>
-    <button class="wishlist" type="button" aria-label="add-to-wishlist">
-        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1393 1.60009e-05C12.8232 0 11.9749 0.171383 11.0024 0.691711C10.6424 0.884353 10.3046 1.11635 9.99088 1.38701C9.68927 1.13153 9.36498 0.910178 9.01983 0.723571C8.02847 0.187592 7.13662 0 5.86777 0C2.46949 0 0 3.07786 0 7.07526C0 10.0941 1.53985 13.0102 4.40804 15.8301C5.91354 17.3102 7.83575 18.7749 9.21237 19.5542L10 20L10.7876 19.5542C12.1643 18.7749 14.0865 17.3102 15.592 15.8301C18.4602 13.0102 20 10.0941 20 7.07526C20 3.12017 17.5072 0.0152621 14.1393 1.60009e-05ZM18.182 7.0751C18.182 9.4402 16.8967 11.8743 14.3763 14.3522C13.0022 15.7031 11.2356 17.0532 10.0002 17.7615C8.76476 17.0532 6.99819 15.7031 5.62406 14.3522C3.10365 11.8743 1.81836 9.4402 1.81836 7.0751C1.81836 4.12156 3.53076 1.9873 5.86795 1.9873C6.8768 1.9873 7.49847 2.11807 8.21393 2.50488C8.63655 2.73337 9.01006 3.03507 9.33339 3.41209L10.0023 4.1921L10.6651 3.40591C10.9957 3.01378 11.3747 2.70521 11.8019 2.47664C12.4964 2.10506 13.0793 1.9873 14.1357 1.98731C16.444 1.99777 18.182 4.16255 18.182 7.0751Z" fill="white"/>
-        </svg>
-        </span></button>
+      
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt=""> </div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1554118879-e459bb1fe1ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80" alt="">  </div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""> </div>
+          <div class="swiper-slide"> <img src="https://images.unsplash.com/photo-1596484065117-dbb2ba7e852f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=819&q=80" alt=""></div>
+          ...
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="product-price-mobile">
+        <p class="product-mobile">Product Name</p>
+        <span class="description-mobile">Description</span>
+        <span class="price-mobile"><span class="new-price-mobile">€ 120,00 </span><span class="discount-mobile">-50% </span> <span class="old-price-mobile">€ 240,00</span></span>
+        <div class="centered-button">
+            <button type="button" class="add-to-cart-mobile">
+                <span>Add to cart</span>
+                <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03319 4C5.32717 1.81519 7.51054 0 9.99959 0C12.4886 0 14.672 1.81519 14.966 4H17.8466C18.9511 4 19.8466 4.89543 19.8466 6C19.8466 6.09464 19.8399 6.18916 19.8265 6.28284L18.1122 18.2828C17.9714 19.2681 17.1276 20 16.1323 20H3.86688C2.87158 20 2.02774 19.2681 1.88699 18.2828L0.172699 6.28284C0.0164898 5.18937 0.776288 4.17631 1.86976 4.0201C1.96344 4.00672 2.05796 4 2.1526 4H5.03319ZM7.07227 4H12.928C12.624 2.93808 11.3982 2 10.0001 2C8.60211 2 7.37626 2.93808 7.07227 4ZM2.15234 6H4.99933V8H6.99933V6H12.9993V8H14.9993V6H17.8463L16.132 18H3.86663L2.15234 6Z" fill="white"/>
+                    </svg>
+                    </span>
+            </button>
+    
+        
+        </div>
+    </div>
+</div>
+
+
+<div class="product-place">
+    <div class="product-grid">
+        <div class="element-grid"><img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt=""> </div>
+        <div class="element-grid"><img src="https://images.unsplash.com/photo-1554118879-e459bb1fe1ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80" alt="">  </div>
+        <div class="element-grid"><img src="https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""> </div>
+        <div class="element-grid"> <img src="https://images.unsplash.com/photo-1596484065117-dbb2ba7e852f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=819&q=80" alt=""></div>
+    </div>
+    <div class="product-price">
+        <p class="product">Product Name</p>
+        <span class="description">Description</span>
+        <span class="price"><span class="new-price">€ 120,00 </span><span class="discount">-50% </span> <span class="old-price">€ 240,00</span></span>
+        <div class="buttons">
+            <button type="button" class="add-to-cart">
+                <span class="cart-font">Add to cart</span>
+                <span class="cart-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03319 4C5.32717 1.81519 7.51054 0 9.99959 0C12.4886 0 14.672 1.81519 14.966 4H17.8466C18.9511 4 19.8466 4.89543 19.8466 6C19.8466 6.09464 19.8399 6.18916 19.8265 6.28284L18.1122 18.2828C17.9714 19.2681 17.1276 20 16.1323 20H3.86688C2.87158 20 2.02774 19.2681 1.88699 18.2828L0.172699 6.28284C0.0164898 5.18937 0.776288 4.17631 1.86976 4.0201C1.96344 4.00672 2.05796 4 2.1526 4H5.03319ZM7.07227 4H12.928C12.624 2.93808 11.3982 2 10.0001 2C8.60211 2 7.37626 2.93808 7.07227 4ZM2.15234 6H4.99933V8H6.99933V6H12.9993V8H14.9993V6H17.8463L16.132 18H3.86663L2.15234 6Z" fill="white"/>
+                    </svg>
+                    </span>
+            </button>
+            <button class="wishlist" type="button" aria-label="add-to-wishlist">
+                <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1393 1.60009e-05C12.8232 0 11.9749 0.171383 11.0024 0.691711C10.6424 0.884353 10.3046 1.11635 9.99088 1.38701C9.68927 1.13153 9.36498 0.910178 9.01983 0.723571C8.02847 0.187592 7.13662 0 5.86777 0C2.46949 0 0 3.07786 0 7.07526C0 10.0941 1.53985 13.0102 4.40804 15.8301C5.91354 17.3102 7.83575 18.7749 9.21237 19.5542L10 20L10.7876 19.5542C12.1643 18.7749 14.0865 17.3102 15.592 15.8301C18.4602 13.0102 20 10.0941 20 7.07526C20 3.12017 17.5072 0.0152621 14.1393 1.60009e-05ZM18.182 7.0751C18.182 9.4402 16.8967 11.8743 14.3763 14.3522C13.0022 15.7031 11.2356 17.0532 10.0002 17.7615C8.76476 17.0532 6.99819 15.7031 5.62406 14.3522C3.10365 11.8743 1.81836 9.4402 1.81836 7.0751C1.81836 4.12156 3.53076 1.9873 5.86795 1.9873C6.8768 1.9873 7.49847 2.11807 8.21393 2.50488C8.63655 2.73337 9.01006 3.03507 9.33339 3.41209L10.0023 4.1921L10.6651 3.40591C10.9957 3.01378 11.3747 2.70521 11.8019 2.47664C12.4964 2.10506 13.0793 1.9873 14.1357 1.98731C16.444 1.99777 18.182 4.16255 18.182 7.0751Z" fill="white"/>
+                </svg>
+                </span>
+            </button>
+        </div>
     </div>
 </div>
 <div class="accordion-box">
@@ -300,41 +322,28 @@
 
     </div>
 
+
 </footer>
-<script>
 
-var acc = document.getElementsByClassName("accordion-body");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-
-    this.classList.toggle("active");
-
-
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-        panel.style.display = "none";
-    } else {
-        panel.style.display = "block";
-    }
-    });
-}
+<!-- <script>
+    const swiper = new Swiper('.swiper', {
+    
+    loop: true,
+  
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script> -->
 
 
-</script>
+<script type="application/javascript" defer src="js/accordion.js" ></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper.js" defer type="application/javascript"></script>
 
-<script>
 
-const swiper = new Swiper('.swiper', {
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 
-</script>
 
 </body>
 </html>
