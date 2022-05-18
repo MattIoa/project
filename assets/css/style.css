@@ -183,8 +183,11 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.filters-bar button {
+  color: #6b6b6b;
+}
 .filters-bar .btn--active {
-  fill: black;
+  color: black;
 }
 .filters-bar button {
   border: 0px;
